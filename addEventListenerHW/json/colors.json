@@ -1,0 +1,43 @@
+[
+    {
+        "ID":"001",
+        "color":"Green"
+
+    },
+    {
+        "ID":"002",
+        "color":"Red"
+    },
+    {
+        "ID":"003",
+        "color":"Blue"
+    },
+    {
+        "ID":"004",
+        "color":"Yellow"
+    },
+    {
+        "ID":"005",
+        "color":"Orange"
+    },
+    {
+        "ID":"006",
+        "color":"Purple"
+    },
+    {
+        "ID":"007",
+        "color":"Brown"
+    },
+    {
+        "ID":"008",
+        "color":"White"
+    },
+    {
+        "ID":"009",
+        "color":"Black"
+    },
+    {
+        "ID":"010",
+        "color":"Grey"
+    }
+]

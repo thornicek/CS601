@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener</title>
+</head>
+<body>
+ <form id="colorsForm">
+  <select id='colors' name='colors'>
+  </select>  
+  <input type='reset' id="resetBtn" value="Reset">
+    <br>
+  <ul id='colorsList'>
+  </ul>
+ </form>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js">
+</script>
+<script src="json/colors.json">
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', event => {
+    let dropdown = $("#colors");
+    dropdown.empty();
+
+    dropdown.append('<option selected="true" >Please Select a Color</option>');
+    dropdown.prop('selectedIndex', 0);
+
+    const url = 'json/colors.json';
+
+    $.getJSON(url,function(data){
+        $.each(data,function(key, entry){
+            dropdown.append($('<option></option>').attr('value',entry.ID).text(entry.color))
+        })
+    });
+  
+    //Nefunguje - nevim proc
+    $('#resetBtn').on("click", function(){
+        $('#form').empty();
+    })
+
+    //Vicemenne to funguje akorat je to hardcodeovani, ale nevim jak to spojit
+    $("#colors").on("change", function() {
+    $("select option:selected" ).each(function() {
+            $("#colorsList").append($(this)).text();
+           
+        
+        });
+    });
+    $("#colors").on("change", function() {
+    $("select option:selected" ).each(function() {
+        $(this).remove(); 
+        
+        });
+    });
+    });
+
+    
+</script>
+</html>
