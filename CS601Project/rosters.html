@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <script src="rosters.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <section class="section" id="news">
@@ -19,8 +21,10 @@
          <div class="sectionTitle">
              <h2>NHL <span>Rosters</span></h2>
          </div>
-         <p>What NHL team roster would you like to display?</p>
-         <select name="NHLTeams">
+         <div class="sectionCenter">
+         <h3>What NHL team roster would you like to display?</h2>
+         <select name="NHLTeams" id="teamsDropdown">
+             <!---
              <option value="Anahiem">Anahiem Ducks</option>
              <option value="Arizona">Arizona Coyotes</option>
              <option value="Boston">Boston Bruins</option>
@@ -51,85 +55,43 @@
              <option value="Washington">Washington Capitals</option>
              <option value="Winnipeg">Winnipeg Jets</option>
            
-
+             -->
          </select>
-         <!--Title end-->
-             <!--Main Div-->
-             <div class="sectionCenter featuredCenter">
-             <!--LeftWing-->
-             <article class="menuItems">
-             
-             
-              <div class="menuInfo">
-                  
-                  
-              </div>
-             
-                 </article>
-             <!--LeftWing-->
-             <!--Center-->
-             <article class="menuItems">
-                 
-              
-                  <div class="menuInfo">
-                      
-                  </div>
-                 
-                     </article>
-                  <!--Center-->
-                   <!--RightWing-->  
-                <article class="menuItems">
-                    <div class="menuImageContainer">
-                    
-                    </div>
-                    
-                    <div class="menuInfo" >
-                        
-                    </div>
-            
-                    </article>
-                    <!--RightWing-->
-                    <!--LeftDefenceman-->  
-            <article class="menuItems">
-            <div class="menuImageContainer">
-            
-                </div>
-                
-                <div class="menuInfo" >
-                
-                </div>
-            
-                </article>
-                    <!--LeftDefenceman-->
-                    <!--RightDefenceman-->  
-            <article class="menuItems">
-            <div class="menuImageContainer">
-            
-                </div>
-                
-                <div class="menuInfo" >
-                
-                </div>
-            
-                </article>
-                    <!--RightDefenceman-->
-                    <!--Goalie-->  
-            <article class="menuItems">
-            <div class="menuImageContainer">
-            
-                </div>
-                
-                <div class="menuInfo" >
-                
-                </div>
-            
-                </article>
-                    <!--Goalie-->
-             
-                </div>
-                <button type="button"><img src="./Images/leftArrow.png"></button>
-                <button type="button"><img src="./Images/rightArrow.png"></button>
         </div>
-        </section>   
+        <section class="section" id="news">
+            <!--Main Div-->
+            <div class="sectionCenter featuredCenter">
+            <!--Roster Forwards-->
+                <article class="menuItems">
+                    <div class="menuInfo" id="forwards">
+                        <h3>Forwards</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum porro dolorem repellendus doloribus soluta placeat, repellat ipsa eius corrupti praesentium.
+                        </p>
+                    </div>
+                </article>
+            <!--Roster Forwards End-->
+            <!--Roster Defenceman-->
+            <article class="menuItems">
+                <div class="menuInfo" id="defenceman">
+                    <h3>Defenceman</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum porro dolorem repellendus doloribus soluta placeat, repellat ipsa eius corrupti praesentium.
+                    </p>
+                </div>
+            </article>
+                <!--Roster Defenceman End-->
+                <!--Roster Goalies-->  
+                <article class="menuItems">
+                    <div class="menuInfo" id="goalies" >
+                        <h3>Goalies</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum porro dolorem repellendus doloribus soluta placeat, repellat ipsa eius corrupti praesentium.
+                        </p>
+                    </div>
+                </article>
+                <!--Roster Goalies end-->  
+            </div>
+    </section>   
 </body>
 </html>
