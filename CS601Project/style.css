@@ -251,11 +251,9 @@ span{
 }
 
 .playercard {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./Images/tbl.jpg");
     background-repeat: no-repeat;
     background-size:cover;
-    background-position: center;
-
+    margin-bottom: 2rem;
 }
 .forwardsection {
     border: 1px solid gray;
@@ -268,21 +266,29 @@ span{
     border-bottom: 1px solid gray;
 }
 
+.tampabaylightning {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/tbl.jpg");
+    background-position: center;
+}
 
 .newjerseydevils {
-    background: url("./Images/new_jersey.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/tbl.jpg");
+    background-position: center;
 }
 
 .newyorkislanders {
-    background: url("./Images/islanders.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/tbl.jpg");
+    background-position: center;
 }
 
 .newyorkrangers {
-    background: url("./Images/rangers.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/tbl.jpg");
+    background-position: center;
 }
 
 .philadelphiaflyers {
-    background: url("./Images/flyers.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/tbl.jpg");
+    background-position: center;
 }
 
 

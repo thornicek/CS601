@@ -25,7 +25,6 @@ function populateDropdown(dropdown) {
             teamsArray.sort((a, b) => (a.name > b.name ? 1 : -1));
             console.log(teamsArray);
             teamsArray.forEach(teamObject => {
-                //console.log(teamObject.name);
                 var option = document.createElement("option");
                 option.innerHTML = teamObject.name;
                 option.setAttribute('id', `team${teamObject.id}`);
@@ -62,8 +61,27 @@ function displayRoster() {
         MyFetch(url).then(json_data => {
             playerArray = json_data.roster;
             playerArray.forEach(playerObject => {
-                console.log(playerObject.person.fullName);
-                // TODO
+                var playerUrl = playerObject.person.link;
+                var playerUrl = 'https://statsapi.web.nhl.com' + playerUrl;
+                //console.log(playerUrl);
+                MyFetch(playerUrl).then(json_data => {
+                    detailedPlayerObject = json_data.people[0];
+                    playerCard = createPlayerCard(detailedPlayerObject);
+                    var type = detailedPlayerObject.primaryPosition.type;
+                    if (type == "Forward") {
+                        var forwardSection = document.getElementById("forwards");
+                        forwardSection.append(playerCard);
+                    }
+                    else if (type == "Defenseman") {
+                        var defenseSection = document.getElementById("defensemen");
+                        defenseSection.append(playerCard);
+                    }
+                    else if (type == "Goalie") {
+                        var goalieSection = document.getElementById("goalies");
+                        goalieSection.append(playerCard);
+                    }
+                    
+                });
             });
         });
     } catch(e) {
@@ -72,3 +90,32 @@ function displayRoster() {
     
 }
 
+function createPlayerCard(detailedPlayerObject)
+{
+    var fullName = detailedPlayerObject.fullName;
+    var jerseyNumber = detailedPlayerObject.primaryNumber;
+    var age = detailedPlayerObject.currentAge;
+    var country = detailedPlayerObject.birthCountry;
+    var height = detailedPlayerObject.height;
+    var weight = detailedPlayerObject.weight;
+    var position = detailedPlayerObject.primaryPosition.name;
+    var team = detailedPlayerObject.currentTeam.name;
+    team = team.toLowerCase();
+    team = team.replace(/\s/g, "");
+    
+    var playerCard = document.createElement("article");
+    playerCard.classList.add("menuItems");
+    playerCard.classList.add("playercard");
+    playerCard.classList.add(team);
+    var cardTitle = document.createElement("h3");
+    cardTitle.classList.add("cardTitle");
+    cardTitle.innerHTML = fullName;
+    var cardJersey = document.createElement("p");
+    cardJersey.classList.add("cardinfo");
+    cardJersey.innerHTML = `<span class="property">Jersey:&nbsp;</span>${jerseyNumber}`;
+
+    playerCard.append(cardTitle);
+    playerCard.append(cardJersey);
+
+    return playerCard;
+}
