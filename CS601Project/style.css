@@ -291,7 +291,140 @@ span{
     background-position: center;
 }
 
+.pittsburghpenguins {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/penguins.jpg");
+    background-position: center;
+}
 
+.bostonbruins {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/boston.png");
+    background-position: center;
+}
+
+.buffalosabres {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/buffalo.jpg");
+    background-position: center;
+}
+
+.montréalcanadiens {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/montreal.jpg");
+    background-position: center;
+}
+
+.ottawasenators {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/senators.png");
+    background-position: center;
+}
+
+.torontomapleleafs {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/toronto.png");
+    background-position: center;
+}
+
+.carolinahurricanes {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/carolina.png");
+    background-position: center;
+}
+
+.floridapanthers {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/florida.jpg");
+    background-position: center;
+}
+
+.washingtoncapitals {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/caps.jpg");
+    background-position: center;
+}
+
+.chicagoblackhawks {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/chicago.png");
+    background-position: center;
+}
+
+.detroitredwings {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/detroit.jpg");
+    background-position: center;
+}
+
+.nashvillepredators {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/nashville.png");
+    background-position: center;
+}
+
+.st\.louisblues{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/blues.png");
+    background-position: center;
+}
+
+.calgaryflames{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/calgary.jpg");
+    background-position: center;
+}
+
+.coloradoavalanche {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/colorado.jpg");
+    background-position: center;
+}
+
+.edmontonoilers {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/edmonton.png");
+    background-position: center;
+}
+
+.vancouvercanucks {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/vancouver.jpg");
+    background-position: center;
+}
+
+.anaheimducks {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/anaheim.jpg");
+    background-position: center;
+}
+
+.dallasstars {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/dallas.png");
+    background-position: center;
+}
+
+.losangeleskings {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/lakings.jpg");
+    background-position: center;
+}
+
+.sanjosesharks {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/sharks.jpg");
+    background-position: center;
+}
+
+.columbusbluejackets {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/columbus.png");
+    background-position: center;
+}
+
+.minnesotawild {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/minnesota.jpg");
+    background-position: center;
+}
+
+.winnipegjets {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/winnipeg.png");
+    background-position: center;
+}
+
+.arizonacoyotes {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/arizona.jpg");
+    background-position: center;
+}
+
+.vegasgoldenknights {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/vegas.jpg");
+    background-position: center;
+}
+
+.seattlekraken {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/seattle.png");
+    background-position: center;
+}
 /* Table CSS */
 
 #standings {

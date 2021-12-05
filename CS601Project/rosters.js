@@ -113,9 +113,29 @@ function createPlayerCard(detailedPlayerObject)
     var cardJersey = document.createElement("p");
     cardJersey.classList.add("cardinfo");
     cardJersey.innerHTML = `<span class="property">Jersey:&nbsp;</span>${jerseyNumber}`;
+    
+    var cardPosition = document.createElement("p");
+    cardPosition.classList.add("cardinfo");
+    cardPosition.innerHTML = `<span class="property">Position:&nbsp;</span>${position}`; //proc musim pouzit tyhle quotes?
+
+    var cardCountry = document.createElement("p");
+    cardCountry.classList.add("cardinfo");
+    cardCountry.innerHTML = `<span class="property">Nationality:&nbsp;</span>${country}`;
+    
+    var cardHeight = document.createElement("p");
+    cardHeight.classList.add("cardinfo");
+    cardHeight.innerHTML = `<span class="property">Height:&nbsp;</span>${height}`;
+
+    var cardWeight = document.createElement("p");
+    cardWeight.classList.add("cardinfo");
+    cardWeight.innerHTML = `<span class="property">Weight:&nbsp;</span>${weight}`;
+
 
     playerCard.append(cardTitle);
     playerCard.append(cardJersey);
-
+    playerCard.append(cardPosition);
+    playerCard.append(cardCountry);
+    playerCard.append(cardHeight);
+    playerCard.append(cardWeight);
     return playerCard;
 }
