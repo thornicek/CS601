@@ -21,6 +21,9 @@ function populateDropdown(dropdown) {
         MyFetch(allTeamsEP).then(json_data => {
             //console.log(json_data);
             teamsArray = json_data.teams;
+            console.log(teamsArray);
+            teamsArray.sort((a, b) => (a.name > b.name ? 1 : -1));
+            console.log(teamsArray);
             teamsArray.forEach(teamObject => {
                 //console.log(teamObject.name);
                 var option = document.createElement("option");
@@ -68,3 +71,4 @@ function displayRoster() {
     }
     
 }
+

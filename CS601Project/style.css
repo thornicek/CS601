@@ -219,9 +219,17 @@ span{
 }
 .menuItems{
     border: 1px solid grey;
-    border-radius: 5px;
-    
+    border-radius: 5px;    
+}
 
+.cardTitle {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+}
+.property {
+    text-transform: uppercase;
+    color: white;
 }
 
 @media screen and (min-width: 768px) {
@@ -241,6 +249,42 @@ span{
     } 
 }
 }
+
+.playercard {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./Images/tbl.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+
+}
+.forwardsection {
+    border: 1px solid gray;
+}
+
+.cardinfo {
+    color: white;
+}
+.defensesection {
+    border-bottom: 1px solid gray;
+}
+
+
+.newjerseydevils {
+    background: url("./Images/new_jersey.png");
+}
+
+.newyorkislanders {
+    background: url("./Images/islanders.jpg");
+}
+
+.newyorkrangers {
+    background: url("./Images/rangers.jpg");
+}
+
+.philadelphiaflyers {
+    background: url("./Images/flyers.png");
+}
+
 
 /* Table CSS */
 

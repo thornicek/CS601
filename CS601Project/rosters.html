@@ -22,96 +22,76 @@
              <h2>NHL <span>Rosters</span></h2>
          </div>
          <div class="sectionCenter">
-         <h3>What NHL team roster would you like to display?</h2>
-         <select name="NHLTeams" id="teamsDropdown">
-             <!---
-             <option value="Anahiem">Anahiem Ducks</option>
-             <option value="Arizona">Arizona Coyotes</option>
-             <option value="Boston">Boston Bruins</option>
-             <option value="Calgary">Calgary Flames</option>
-             <option value="Carolina">Carolina Hurricanes</option>
-             <option value="Columbus">Columbus Blue Jackets</option>
-             <option value="Dallas">Dallas Stars</option>
-             <option value="Detroit">Detroit Red Wings</option>
-             <option value="Edmonton">Edmonton Oilers</option>
-             <option value="Florida">Florida Panthers</option>
-             <option value="Los Angeles">Los Angeles Kings</option>
-             <option value="Minnesota">Minnesota Wild</option>
-             <option value="Montreal">Montreal Canadiens</option>
-             <option value="Nashville">Nashville Predators</option>
-             <option value="New Jersey">New Jersey Devils</option>
-             <option value="New York Islanders">New York Islanders</option>
-             <option value="New York Rangers">New York Rangers</option>
-             <option value="Ottawa">Ottawa Senators</option>
-             <option value="Philadelphia">Philadelphia Flyers</option>
-             <option value="Pittsburgh">Pittsburgh Penguins</option>
-             <option value="San Jose">San Jose Sharks</option>
-             <option value="Seattle">Seattle Kraken</option>
-             <option value="St Louis">St Louis Blues</option>
-             <option value="Tampa Bay">Tampa Bay Lightning</option>
-             <option value="Toronto">Toronto Maple Leafs</option>
-             <option value="Vancouver">Vancouver Canucks</option>
-             <option value="Vegas">Vegas Golden Knights</option>
-             <option value="Washington">Washington Capitals</option>
-             <option value="Winnipeg">Winnipeg Jets</option>
-           
-             -->
-         </select>
+            <h3>What NHL team roster would you like to display?</h2>
+            <select name="NHLTeams" id="teamsDropdown">
+            </select>
         </div>
-        <section class="section" id="news">
-            <!--Main Div-->
-            <div class="sectionCenter featuredCenter">
-            <!--Roster Forwards-->
-            <div class="forward">
-                <article class="menuItems">
-                    <div class="menuInfo" id="forwards">
-                        <h3>Forwards</h3>
-                        <p id="fullName"></p>
-                        <p id="nationality"></p>
-                        <p id="height"></p>
-                        <p id="weight"></p>
-                        <p id="primaryNumber"></p>
-                        <p id="shootsCatches"></p>
-                        <p id="goals"></p>
-                        <p id="assists"></p>
-                        <p id="points"></p>
-                    </div>
-                </article>
-                <article class="menuItems">
-                    <div class="menuInfo" id="forwards">
-                        <h3>Forwards</h3>
-                        <p id="fullName"></p>
-                        <p id="nationality"></p>
-                        <p id="height"></p>
-                        <p id="weight"></p>
-                        <p id="primaryNumber"></p>
-                        <p id="shootsCatches"></p>
-                        <p id="goals"></p>
-                        <p id="assists"></p>
-                        <p id="points"></p>
-                    </div>
-                </article>
-                <article class="menuItems">
-                    <div class="menuInfo" id="forwards">
-                        <h3>Forwards</h3>
-                        <p id="fullName"></p>
-                        <p id="nationality"></p>
-                        <p id="height"></p>
-                        <p id="weight"></p>
-                        <p id="primaryNumber"></p>
-                        <p id="shootsCatches"></p>
-                        <p id="goals"></p>
-                        <p id="assists"></p>
-                        <p id="points"></p>
-                    </div>
-                </article>
-            </div>
-            <!--Roster Forwards End-->
-            <!--Roster Defenceman-->
-            <div class="defence">
+    </section>
+    <!--Forwards section-->
+    <section class="section forwardsection">
+        <!-- Section title -->
+        <div class="sectionTitle">
+            <h2>Forwards</h2>
+        </div>
+        <!-- Forwards parent flex container -->
+        <div class="sectionCenter featuredCenter" id="forwards">
+            <!--Single forward card-->
+            <article class="menuItems playercard">
+                <div class="menuInfo">
+                    <h3 id="fullname" class="cardTitle">Nikita Kucherov</h3>
+                    <p class="cardinfo" id="jersey"><span class="property">Jersey:&nbsp;</span>#86</p>
+                    <p class="cardinfo" id="position"><span class="property">Position:&nbsp;</span>Right Wing</p>
+
+                </div>
+            </article>
+             <!--Single forward card-->
+             <article class="menuItems playercard">
+                <div class="menuInfo">
+                    <h3 id="fullname" class="cardTitle">Nikita Kucherov</h3>
+                    <p class="cardinfo" id="jersey"><span class="property">Jersey:&nbsp;</span>#86</p>
+                    <p class="cardinfo" id="position"><span class="property">Position:&nbsp;</span>Right Wing</p>
+
+                </div>
+            </article>
+             <!--Single forward card-->
+             <article class="menuItems playercard">
+                <div class="menuInfo">
+                    <h3 id="fullname" class="cardTitle">Nikita Kucherov</h3>
+                    <p class="cardinfo" id="jersey"><span class="property">Jersey:&nbsp;</span>#86</p>
+                    <p class="cardinfo" id="position"><span class="property">Position:&nbsp;</span>Right Wing</p>
+
+                </div>
+            </article>
+
+        </div>
+    </section>
+    <!--Defensemen section-->
+    <section class="section defensesection">
+        <!-- Section title -->
+        <div class="sectionTitle">
+            <h2>Defensemen</h2>
+        </div>
+        <!-- Defensemen parent flex container -->
+        <div class="sectionCenter featuredCenter" id="defensemen">
+            <!--Single defenseman card-->
             <article class="menuItems">
-                <div class="menuInfo" id="defenceman">
-                    <h3>Defenceman</h3>
+                <div class="menuInfo">
+                    <h3>Defenseman 1</h3>
+                    <p id="fullName"></p>
+                    <p id="nationality"></p>
+                    <p heid="ight"></p>
+                    <p id="weight"></p>
+                    <p id="primaryNumber"></p>
+                    <p id="shootsCatches"></p>
+                    <p id="goals"></p>
+                    <p id="assists"></p>
+                    <p id="points"></p>
+                </div>
+            </article>
+            <!--Single defenseman card-->
+            <article class="menuItems">
+                <div class="menuInfo">
+                    <h3>Defenseman 2</h3>
                     <p id="fullName"></p>
                     <p id="nationality"></p>
                     <p id="height"></p>
@@ -123,9 +103,10 @@
                     <p id="points"></p>
                 </div>
             </article>
+            <!--Single defenseman card-->
             <article class="menuItems">
-                <div class="menuInfo" id="defenceman">
-                    <h3>Defenceman</h3>
+                <div class="menuInfo">
+                    <h3>Defenseman 3</h3>
                     <p id="fullName"></p>
                     <p id="nationality"></p>
                     <p id="height"></p>
@@ -137,27 +118,63 @@
                     <p id="points"></p>
                 </div>
             </article>
-            </div>
-                <!--Roster Defenceman End-->
-                <!--Roster Goalies-->  
-            <div class="goalies">
-                <article class="menuItems">
-                    <div class="menuInfo" id="goalies" >
-                        <h3>Goalies</h3>
-                        <p id="fullName"></p>
-                        <p id="nationality"></p>
-                        <p id="height"></p>
-                        <p id="weight"></p>
-                        <p id="primaryNumber"></p>
-                        <p id="shootsCatches"></p>
-                        <p id="goals"></p>
-                        <p id="assists"></p>
-                        <p id="points"></p>
-                    </div>
-                </article>
-            </div>
-                <!--Roster Goalies end-->  
-            </div>
-    </section>   
+        </div>
+    </section>
+    <!--Goalies section-->
+    <section class="section">
+        <!-- Section title -->
+        <div class="sectionTitle">
+            <h2>Goalies</h2>
+        </div>
+        <!-- Goalies parent flex container -->
+        <div class="sectionCenter featuredCenter" id="goalies">
+            <!--Single forward card-->
+            <article class="menuItems">
+                <div class="menuInfo">
+                    <h3>Goalie 1</h3>
+                    <p id="fullName"></p>
+                    <p id="nationality"></p>
+                    <p heid="ight"></p>
+                    <p id="weight"></p>
+                    <p id="primaryNumber"></p>
+                    <p id="shootsCatches"></p>
+                    <p id="goals"></p>
+                    <p id="assists"></p>
+                    <p id="points"></p>
+                </div>
+            </article>
+            <!--Single forward card-->
+            <article class="menuItems">
+                <div class="menuInfo">
+                    <h3>Goalie 2</h3>
+                    <p id="fullName"></p>
+                    <p id="nationality"></p>
+                    <p id="height"></p>
+                    <p id="weight"></p>
+                    <p id="primaryNumber"></p>
+                    <p id="shootsCatches"></p>
+                    <p id="goals"></p>
+                    <p id="assists"></p>
+                    <p id="points"></p>
+                </div>
+            </article>
+            <!--Single forward card-->
+            <article class="menuItems">
+                <div class="menuInfo">
+                    <h3>Goalie 3</h3>
+                    <p id="fullName"></p>
+                    <p id="nationality"></p>
+                    <p id="height"></p>
+                    <p id="weight"></p>
+                    <p id="primaryNumber"></p>
+                    <p id="shootsCatches"></p>
+                    <p id="goals"></p>
+                    <p id="assists"></p>
+                    <p id="points"></p>
+                </div>
+            </article>
+        </div>
+    </section>
+    
 </body>
 </html>
