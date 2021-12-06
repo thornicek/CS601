@@ -29,15 +29,44 @@ function displayTable(){
 }
 function createRow(teamObject){
     var teamName = teamObject.team.name;
+    var gamesPlayed = teamObject.gamesPlayed;
     var teamWins = teamObject.leagueRecord.wins;
     var teamLosses = teamObject.leagueRecord.losses;
     var teamOTLoss = teamObject.leagueRecord.ot;
     var teamStreak = teamObject.streak.streakCode;
+    var teamPoints = teamObject.points;
     var row = document.createElement("tr");
     //repeat for all var
+    
+    
+    
     var col1 = document.createElement("th");
     col1.innerHTML = teamName;
     row.append(col1);
+
+    var col2 = document.createElement("th");
+    col2.innerHTML = gamesPlayed;
+    row.append(col2);
+
+    var col3 = document.createElement("th");
+    col3.innerHTML = teamWins;
+    row.append(col3);
+
+    var col4 = document.createElement("th");
+    col4.innerHTML = teamLosses;
+    row.append(col4);
+
+    var col5 = document.createElement("th");
+    col5.innerHTML = teamOTLoss;
+    row.append(col5);
+
+    var col6 = document.createElement("th");
+    col6.innerHTML = teamPoints;
+    row.append(col6);
+
+    var col7 = document.createElement("th");
+    col7.innerHTML = teamStreak;
+    row.append(col7);
 
     return row;
 
