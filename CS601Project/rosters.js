@@ -52,6 +52,14 @@ function displayRoster() {
     console.log(teamName);
     var teamElementID = $("select option:selected").attr("id");
     var teamID = teamElementID.substring(4);
+    // sections to which we will append player's cards and from which we need to remove player's cards
+    var forwardSection = document.getElementById("forwards");
+    var defenseSection = document.getElementById("defensemen");
+    var goalieSection = document.getElementById("goalies");
+    clearPlayerCards(forwardSection);
+    clearPlayerCards(defenseSection);
+    clearPlayerCards(goalieSection);
+
     //console.log(teamName);
     //console.log(teamID);
     document.getElementById("teamTitle").innerHTML = `${teamName}`;
@@ -69,17 +77,15 @@ function displayRoster() {
                     playerCard = createPlayerCard(detailedPlayerObject);
                     var type = detailedPlayerObject.primaryPosition.type;
                     if (type == "Forward") {
-                        var forwardSection = document.getElementById("forwards");
                         forwardSection.append(playerCard);
                     }
-                    else if (type == "Defenseman") {
-                        var defenseSection = document.getElementById("defensemen");
+                    else if (type == "Defenseman") {                       
                         defenseSection.append(playerCard);
                     }
-                    else if (type == "Goalie") {
-                        var goalieSection = document.getElementById("goalies");
+                    else if (type == "Goalie") { 
                         goalieSection.append(playerCard);
                     }
+
                     
                 });
             });
@@ -107,6 +113,7 @@ function createPlayerCard(detailedPlayerObject)
     playerCard.classList.add("menuItems");
     playerCard.classList.add("playercard");
     playerCard.classList.add(team);
+    playerCard.classList.add("appear");
     var cardTitle = document.createElement("h3");
     cardTitle.classList.add("cardTitle");
     cardTitle.innerHTML = fullName;
@@ -138,4 +145,10 @@ function createPlayerCard(detailedPlayerObject)
     playerCard.append(cardHeight);
     playerCard.append(cardWeight);
     return playerCard;
+}
+
+function clearPlayerCards(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
 }
