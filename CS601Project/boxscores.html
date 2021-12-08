@@ -12,37 +12,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <script src="boxscores.js"></script>
 </head>
 <header>
-    <h1>NHL <span>Boxscores</span></h1>
+  <div class="mainDiv">
+    <div class="divBanner">
+        <h1>NHL <span>Box Scores</span></h1>
+</div>
+</div>
 </header>
 <body>
-    <table id="boxscoresTable">
+    <table class="table" id="boxscoresTable">
         <tr>
-          <th>Team</th>
-          <th>Wins</th>
-          <th>Losses</th>
-          <th>Overtime Losses</th>
-          <th>Points</th>
-          <th>Standings in Divsion</th>
-          <th>Standings in Conference</th>
-          <th>Standings in the League</th>
-          <th>Score</th>
-
-
+          <th>Home Team</th>
+          <th>Home Score</th>
+          <th>Home Shots on Goal</th>
+          <th>Away Team</th>
+          <th>Away Score</th>
+          <th>Away Shots on Goal</th>
         </tr>
-        <tr>
-          <td>Team1</td>
-          <td>Team1 Wins</td>
-          <td>Team1 Losses</td>
-          <td>Team1 Overtime Losses</td>
-          <td>Team1 Points</td>
-          <td>Team1 Standings Division</td>
-          <td>Team1 Standings Conference</td>
-          <td>Team1 Standings League</td>
-          <td>score</td>
-          
-        </tr>
+  
       </table>
 </body>
 </html>
