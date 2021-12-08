@@ -35,36 +35,40 @@ function createRow(teamObject){
     var teamOTLoss = teamObject.leagueRecord.ot;
     var teamStreak = teamObject.streak.streakCode;
     var teamPoints = teamObject.points;
+    var teamStandings = teamObject.leagueRank;
     var row = document.createElement("tr");
     //repeat for all var
     
     
-    
-    var col1 = document.createElement("th");
-    col1.innerHTML = teamName;
+    var col1 = document.createElement("td");
+    col1.innerHTML = teamStandings;
     row.append(col1);
 
-    var col2 = document.createElement("th");
+    var col2 = document.createElement("td");
+    col2.innerHTML = teamName;
+    row.append(col2);
+
+    var col2 = document.createElement("td");
     col2.innerHTML = gamesPlayed;
     row.append(col2);
 
-    var col3 = document.createElement("th");
+    var col3 = document.createElement("td");
     col3.innerHTML = teamWins;
     row.append(col3);
 
-    var col4 = document.createElement("th");
+    var col4 = document.createElement("td");
     col4.innerHTML = teamLosses;
     row.append(col4);
 
-    var col5 = document.createElement("th");
+    var col5 = document.createElement("td");
     col5.innerHTML = teamOTLoss;
     row.append(col5);
 
-    var col6 = document.createElement("th");
+    var col6 = document.createElement("td");
     col6.innerHTML = teamPoints;
     row.append(col6);
 
-    var col7 = document.createElement("th");
+    var col7 = document.createElement("td");
     col7.innerHTML = teamStreak;
     row.append(col7);
 
